@@ -1,0 +1,212 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* --------------login form ----  */
+
+
+#school{
+  display: flex;
+  background-color: yellow;
+ justify-content: center;
+}
+
+
+
+.heading{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  color: white;
+
+}
+
+
+.login{
+  /* display: grid; */
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px;
+  grid-gap: 20px;
+  margin: 20px;
+  flex-wrap: wrap;
+
+}
+
+/* .image{
+  width: 65%;
+  height: 120%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+body{
+
+  
+   align-items: center; 
+  /* padding: 0 10px; */
+  justify-content: center;
+  min-height: 100vh;
+  background: #9B59B6; 
+}
+.background{
+  width: 100%;
+  height: 110vh;
+  background-image: url(image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.iitbhu{
+  background-color: blue;
+  color: yellow;
+  display: flex;
+  justify-content: center;
+}
+.dashboard{
+  background-color: black;
+  color: white;
+  border: 1vh 2vh;
+  border-color: blue;
+}
+
+.indication{
+  background-color: yellow;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.mycalander{
+  width: 60%;
+  height: 70%;
+}
+
+.wrapper{
+  display: flex;
+  width: 60vh;
+  
+
+  background: rgb(147, 105, 25);
+  border-radius: 15%;
+  border: solid black;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.wrapper header{
+  
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #963030;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+  display: flexbox;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+.attendanceform{
+  padding: 2vh;
+  display: flex;
+  width: 50vh;
+  background-color: rgb(151, 207, 30);
+  border-radius: 15%;
+  justify-content: center;
+  align-items: center;
+  border: solid black;
+
+
+}

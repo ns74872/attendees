@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Attendance Management</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+  
+    <div class="background">
+      
+      <div class="iitbhu">
+        <h1>IIT BHU(VARANASI)</h1>
+      </div>
+      <div class="dashboard">
+        <h1>NISHANT'S ATTENDENCE DASHBOARD</h1>
+        <h2>Attendance for April, 2023</h2>
+      </div>
+
+      <div class="indication">
+        <h2>Take your attendance</h2>
+      </div>
+
+
+      <div class="container">
+      <div class="mycalender">
+      <div class="wrapper">
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+            <span id="next" class="material-symbols-rounded">chevron_right</span>
+          </div>
+        </header>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </div>
+    </div>
+
+      <div class="attendanceform">
+        <form>
+          <label for="name">Student Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+          
+          <label for="Roll No.">Roll No.</label>
+          <input type="text" id="class" name="class"><br><br>
+          <label for="class">Class:</label>
+          <select name="class" id="class">
+              <option value="B.tech">B.tech</option>
+              <option value="idd">IDD</option>
+          </select><br><br>
+          <label for="attendance">Attendance:</label>
+          <select id="attendance" name="attendance">
+              <option value="present">Present</option>
+              <option value="absent">Absent</option>
+          </select><br><br>
+          <input type="submit" value="Submit">
+      </form>
+      </div>
+      
+   
+    </div>
+     
+
+  </body> 
+</html>
